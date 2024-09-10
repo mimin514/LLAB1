@@ -10,5 +10,8 @@
 #include "main.h"
 
 void display(int num);
+void display2(int num);
+
 void display1to9(void);
+void display2_1to9(void);
 #endif /* INC_LED7_H_ */
