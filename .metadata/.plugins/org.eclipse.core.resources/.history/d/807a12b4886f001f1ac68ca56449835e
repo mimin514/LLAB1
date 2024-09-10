@@ -106,7 +106,7 @@ int main(void)
 		  cnt_gr=0;
 	  }
 	  cnt_re++; cnt_ye++; cnt_gr++;
-	  HAL_Delay(1000);
+	  HAL_Delay(300);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
