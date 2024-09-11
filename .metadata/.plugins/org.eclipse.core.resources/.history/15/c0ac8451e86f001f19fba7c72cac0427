@@ -95,7 +95,6 @@ int main(void)
   {
     /* USER CODE END WHILE */
 	  led_round();
-	  HAL_Delay(800);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

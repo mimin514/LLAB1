@@ -736,3 +736,106 @@
 2024-09-10 22:27:37,474 [INFO] ProjectBuilder:4285 - Time for Generating toolchain IDE Files: 2394mS.
 2024-09-10 22:27:37,475 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
 2024-09-10 22:27:37,477 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2024-09-10 22:34:26,860 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 365273216 Bytes (1039138816)
+2024-09-10 22:34:29,141 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 269226000 Bytes (1039138816)
+2024-09-10 22:34:29,674 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 320199640 Bytes (1039138816)
+2024-09-10 22:34:30,457 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: NVIC
+2024-09-10 22:34:30,457 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: SYS
+2024-09-10 22:34:30,457 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: GPIO
+2024-09-10 22:34:30,458 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: RCC
+2024-09-10 22:34:30,459 [INFO] CodeGenerator:690 - code generatio: config db path: D:\BKRA\KEIL C test\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.6.1.202207061420\\db\
+2024-09-10 22:34:30,935 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\MXTmpFiles\license.tmp_save
+2024-09-10 22:34:31,114 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\MXTmpFiles\license.tmp
+2024-09-10 22:34:31,201 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\MXTmpFiles\gpio.tmp_save
+2024-09-10 22:34:31,375 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\MXTmpFiles\gpio.tmp
+2024-09-10 22:34:31,413 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Src\stm32f1xx_it.c_save
+2024-09-10 22:34:31,503 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Src\stm32f1xx_it.c
+2024-09-10 22:34:31,508 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Inc\stm32f1xx_it.h_save
+2024-09-10 22:34:31,583 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Inc\stm32f1xx_it.h
+2024-09-10 22:34:31,592 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2024-09-10 22:34:31,689 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Src\stm32f1xx_hal_msp.c
+2024-09-10 22:34:31,692 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\MXTmpFiles\system.tmp_save
+2024-09-10 22:34:31,765 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\MXTmpFiles\system.tmp
+2024-09-10 22:34:31,772 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-09-10 22:34:32,051 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Inc\stm32f1xx_hal_conf.h
+2024-09-10 22:34:32,085 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Inc\main.h_save
+2024-09-10 22:34:32,195 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Inc\main.h
+2024-09-10 22:34:32,200 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Src\main.c_save
+2024-09-10 22:34:32,296 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Src\main.c
+2024-09-10 22:34:33,162 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 221mS.
+2024-09-10 22:34:33,165 [INFO] ProjectBuilder:4117 - Project Generator version: 3.17.1
+2024-09-10 22:34:33,385 [INFO] ConfigFileManager:1394 - The Die is : DIE412
+2024-09-10 22:34:35,472 [INFO] ProjectBuilder:4285 - Time for Generating toolchain IDE Files: 2307mS.
+2024-09-10 22:34:35,474 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 2mS.
+2024-09-10 22:34:35,476 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2024-09-10 22:41:22,582 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 572106936 Bytes (1039138816)
+2024-09-10 22:41:24,251 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 590236424 Bytes (1039138816)
+2024-09-10 22:41:26,529 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 709937840 Bytes (1039138816)
+2024-09-10 22:41:26,986 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: NVIC
+2024-09-10 22:41:26,986 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: SYS
+2024-09-10 22:41:26,986 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: GPIO
+2024-09-10 22:41:26,987 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: RCC
+2024-09-10 22:41:26,990 [INFO] CodeGenerator:690 - code generatio: config db path: D:\BKRA\KEIL C test\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.6.1.202207061420\\db\
+2024-09-10 22:41:27,215 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\MXTmpFiles\license.tmp_save
+2024-09-10 22:41:27,339 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\MXTmpFiles\license.tmp
+2024-09-10 22:41:27,382 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\MXTmpFiles\gpio.tmp_save
+2024-09-10 22:41:27,463 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\MXTmpFiles\gpio.tmp
+2024-09-10 22:41:27,497 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Src\stm32f1xx_it.c_save
+2024-09-10 22:41:27,585 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Src\stm32f1xx_it.c
+2024-09-10 22:41:27,591 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Inc\stm32f1xx_it.h_save
+2024-09-10 22:41:27,649 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Inc\stm32f1xx_it.h
+2024-09-10 22:41:27,658 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2024-09-10 22:41:27,774 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Src\stm32f1xx_hal_msp.c
+2024-09-10 22:41:27,778 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\MXTmpFiles\system.tmp_save
+2024-09-10 22:41:27,851 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\MXTmpFiles\system.tmp
+2024-09-10 22:41:27,862 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-09-10 22:41:27,939 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Inc\stm32f1xx_hal_conf.h
+2024-09-10 22:41:27,964 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Inc\main.h_save
+2024-09-10 22:41:28,041 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Inc\main.h
+2024-09-10 22:41:28,045 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Src\main.c_save
+2024-09-10 22:41:28,133 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Src\main.c
+2024-09-10 22:41:30,514 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 706mS.
+2024-09-10 22:41:30,519 [INFO] ProjectBuilder:4117 - Project Generator version: 3.17.1
+2024-09-10 22:41:31,349 [INFO] ConfigFileManager:1394 - The Die is : DIE412
+2024-09-10 22:41:35,071 [INFO] ProjectBuilder:4285 - Time for Generating toolchain IDE Files: 4552mS.
+2024-09-10 22:41:35,073 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
+2024-09-10 22:41:35,075 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2024-09-10 23:01:47,444 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 668527104 Bytes (1039138816)
+2024-09-10 23:01:49,309 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 681029448 Bytes (1039138816)
+2024-09-10 23:01:49,524 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 696181480 Bytes (1039138816)
+2024-09-10 23:01:49,916 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: NVIC
+2024-09-10 23:01:49,917 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: SYS
+2024-09-10 23:01:49,917 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: GPIO
+2024-09-10 23:01:49,918 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: RCC
+2024-09-10 23:01:49,918 [INFO] CodeGenerator:690 - code generatio: config db path: D:\BKRA\KEIL C test\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.6.1.202207061420\\db\
+2024-09-10 23:01:50,187 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\MXTmpFiles\license.tmp_save
+2024-09-10 23:01:50,322 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\MXTmpFiles\license.tmp
+2024-09-10 23:01:50,364 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\MXTmpFiles\gpio.tmp_save
+2024-09-10 23:01:50,460 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\MXTmpFiles\gpio.tmp
+2024-09-10 23:01:50,492 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Src\stm32f1xx_it.c_save
+2024-09-10 23:01:50,591 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Src\stm32f1xx_it.c
+2024-09-10 23:01:50,597 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Inc\stm32f1xx_it.h_save
+2024-09-10 23:01:50,664 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Inc\stm32f1xx_it.h
+2024-09-10 23:01:50,672 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2024-09-10 23:01:50,759 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Src\stm32f1xx_hal_msp.c
+2024-09-10 23:01:50,762 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\MXTmpFiles\system.tmp_save
+2024-09-10 23:01:50,821 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\MXTmpFiles\system.tmp
+2024-09-10 23:01:50,829 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-09-10 23:01:50,909 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Inc\stm32f1xx_hal_conf.h
+2024-09-10 23:01:50,929 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Inc\main.h_save
+2024-09-10 23:01:51,005 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Inc\main.h
+2024-09-10 23:01:51,011 [INFO] CodeEngine:245 - oldGeneratedFile, D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Src\main.c_save
+2024-09-10 23:01:51,107 [INFO] CodeEngine:269 - Generated code: D:\BKU\Year 3\VXL-VDK\git1\lab1\Core\Src\main.c
+2024-09-10 23:01:51,707 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 158mS.
+2024-09-10 23:01:51,710 [INFO] ProjectBuilder:4117 - Project Generator version: 3.17.1
+2024-09-10 23:01:51,958 [INFO] ConfigFileManager:1394 - The Die is : DIE412
+2024-09-10 23:01:54,310 [INFO] ProjectBuilder:4285 - Time for Generating toolchain IDE Files: 2600mS.
+2024-09-10 23:01:54,314 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
+2024-09-10 23:01:54,316 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2024-09-11 09:38:37,620 [INFO] Activator:177 - 
+
+
+2024-09-11 09:38:37,624 [INFO] Activator:178 - !SESSION log4j initialized
+2024-09-11 09:39:14,883 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2024-09-11 09:39:14,885 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2024-09-11 09:39:14,890 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.

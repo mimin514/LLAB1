@@ -11,6 +11,6 @@
 
 void led_init(void);
 void led_run(void);
-void led_round(void);
+
 
 #endif /* INC_LED_H_ */

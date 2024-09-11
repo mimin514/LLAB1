@@ -94,8 +94,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  led_round();
-	  HAL_Delay(800);
+	  led_run();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

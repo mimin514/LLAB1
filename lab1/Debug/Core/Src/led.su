@@ -12,3 +12,4 @@
 ../Core/Src/led.c:67:6:led_green_on_ng	8	static
 ../Core/Src/led.c:71:6:led_green_off_ng	8	static
 ../Core/Src/led.c:75:8:led_run	8	static
+../Core/Src/led.c:102:8:led_round	8	static
