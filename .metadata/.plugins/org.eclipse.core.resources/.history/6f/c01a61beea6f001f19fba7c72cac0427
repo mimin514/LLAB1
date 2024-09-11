@@ -15,6 +15,5 @@ void led_round(void);
 
 void clearAllClock(void);
 void setNumberOnClock(int num);
-void clearNumberOnClock(int num);
 
 #endif /* INC_LED_H_ */

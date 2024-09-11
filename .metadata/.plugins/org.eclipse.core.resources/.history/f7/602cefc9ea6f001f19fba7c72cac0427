@@ -91,7 +91,7 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   led_init();
-  //int cnttt=0;
+  int cnttt=0;
   while (1)
   {
     /* USER CODE END WHILE */
@@ -99,13 +99,13 @@ int main(void)
 	  setNumberOnClock(3);
 	  setNumberOnClock(11);
 	  setNumberOnClock(0);
-//cnttt++;
-//	  if(cnttt==2)
-//		  {
-//		  clearAllClock();
-//		  cnttt=0;
-//		  }
-	  //clearNumberOnClock(3);
+cnttt++;
+	  if(cnttt==2)
+		  {
+		  clearAllClock();
+		  cnttt=0;
+		  }
+
 	  HAL_Delay(800);
     /* USER CODE BEGIN 3 */
   }
