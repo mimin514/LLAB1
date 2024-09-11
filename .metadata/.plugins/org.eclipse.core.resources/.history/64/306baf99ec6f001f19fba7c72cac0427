@@ -257,25 +257,33 @@ void led_green_off_ng(void){
   }
 
 int gio=0,phut=0,giay=0;
-void led_runclock(void){
-    setNumberOnClock(giay);
-    setNumberOnClock(phut);
-    setNumberOnClock(gio);
 
-    giay++;
+ void led_runclock(void){
+	 clearNumberOnClock(last_giay % 12);  // Giây cũ
+	     clearNumberOnClock(last_phut % 12);  // Phút cũ
+	     clearNumberOnClock(last_gio % 12);   // Giờ cũ
 
-    if(giay == 12){
-        giay = 0;
-        phut++;
-    }
+	     // Cập nhật giây
+	     setNumberOnClock(giay % 12);  // Hiển thị giây trên LED tương ứng
+	     last_giay = giay;             // Lưu giây hiện tại để xóa ở lần tiếp theo
+	     giay++;
 
-    if(phut == 12){
-        phut = 0;
-        gio++;
-    }
+	     if (giay == 60) {  // Nếu đủ 60 giây, tăng phút
+	         giay = 0;
+	         setNumberOnClock(phut % 12);  // Hiển thị phút trên LED tương ứng
+	         last_phut = phut;             // Lưu phút hiện tại để xóa ở lần tiếp theo
+	         phut++;
+	     }
 
-    if(gio == 12){
-        gio = 0;
-    }
-}
+	     if (phut == 60) {  // Nếu đủ 60 phút, tăng giờ
+	         phut = 0;
+	         setNumberOnClock(gio % 12);  // Hiển thị giờ trên LED tương ứng
+	         last_gio = gio;              // Lưu giờ hiện tại để xóa ở lần tiếp theo
+	         gio++;
+	     }
+
+	     if (gio == 12) {  // Nếu đủ 12 giờ, quay lại 0 (đồng hồ 12 giờ)
+	         gio = 0;
+	     }
+	 }
 

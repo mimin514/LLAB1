@@ -258,22 +258,34 @@ void led_green_off_ng(void){
 
 int gio=0,phut=0,giay=0;
 void led_runclock(void){
+    // Xóa tất cả LED trước khi cập nhật mới
+    clearAllClock();
+
+    // Hiển thị giây
     setNumberOnClock(giay);
+
+    // Hiển thị phút (trên LED khác với giây)
     setNumberOnClock(phut);
+
+    // Hiển thị giờ (trên LED khác với giây và phút)
     setNumberOnClock(gio);
 
+    // Tăng giây sau mỗi lần gọi
     giay++;
 
+    // Nếu giây đạt 12, reset giây và tăng phút
     if(giay == 12){
         giay = 0;
-        phut++;
+        phut++;  // Tăng phút sau khi giây đạt 12
     }
 
+    // Nếu phút đạt 12, reset phút và tăng giờ
     if(phut == 12){
         phut = 0;
-        gio++;
+        gio++;  // Tăng giờ sau khi phút đạt 12
     }
 
+    // Nếu giờ đạt 12, reset giờ về 0
     if(gio == 12){
         gio = 0;
     }

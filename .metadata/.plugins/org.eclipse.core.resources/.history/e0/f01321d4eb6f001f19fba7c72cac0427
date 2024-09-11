@@ -17,6 +17,4 @@ void clearAllClock(void);
 void setNumberOnClock(int num);
 void clearNumberOnClock(int num);
 
-void led_runclock(void);
-
 #endif /* INC_LED_H_ */

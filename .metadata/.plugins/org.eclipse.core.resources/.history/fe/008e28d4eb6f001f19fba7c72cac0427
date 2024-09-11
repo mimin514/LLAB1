@@ -255,27 +255,3 @@ void led_green_off_ng(void){
 		  break;
 	  }
   }
-
-int gio=0,phut=0,giay=0;
-void led_runclock(void){
-    setNumberOnClock(giay);
-    setNumberOnClock(phut);
-    setNumberOnClock(gio);
-
-    giay++;
-
-    if(giay == 12){
-        giay = 0;
-        phut++;
-    }
-
-    if(phut == 12){
-        phut = 0;
-        gio++;
-    }
-
-    if(gio == 12){
-        gio = 0;
-    }
-}
-

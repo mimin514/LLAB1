@@ -16,3 +16,4 @@
 ../Core/Src/led.c:159:8:clearAllClock	8	static
 ../Core/Src/led.c:173:8:setNumberOnClock	16	static
 ../Core/Src/led.c:216:7:clearNumberOnClock	16	static
+../Core/Src/led.c:260:6:led_runclock	8	static
