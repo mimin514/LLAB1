@@ -366,87 +366,76 @@ int gio=0,phut=0,giay=0;
 void led_runclock(void){
  8000350:	b580      	push	{r7, lr}
  8000352:	af00      	add	r7, sp, #0
-    // Xóa tất cả LED trước khi cập nhật mới
-    clearAllClock();
- 8000354:	f7ff ff40 	bl	80001d8 <clearAllClock>
-
-    // Hiển thị giây
     setNumberOnClock(giay);
+    setNumberOnClock(phut);
+ 8000354:	f7ff ff40 	bl	80001d8 <clearAllClock>
+    setNumberOnClock(gio);
+
+    giay++;
  8000358:	4b1a      	ldr	r3, [pc, #104]	; (80003c4 <led_runclock+0x74>)
  800035a:	681b      	ldr	r3, [r3, #0]
  800035c:	4618      	mov	r0, r3
  800035e:	f7ff ff81 	bl	8000264 <setNumberOnClock>
 
-    // Hiển thị phút (trên LED khác với giây)
-    setNumberOnClock(phut);
+    if(giay == 12){
+        giay = 0;
  8000362:	4b19      	ldr	r3, [pc, #100]	; (80003c8 <led_runclock+0x78>)
  8000364:	681b      	ldr	r3, [r3, #0]
  8000366:	4618      	mov	r0, r3
  8000368:	f7ff ff7c 	bl	8000264 <setNumberOnClock>
+        phut++;
+    }
 
-    // Hiển thị giờ (trên LED khác với giây và phút)
-    setNumberOnClock(gio);
  800036c:	4b17      	ldr	r3, [pc, #92]	; (80003cc <led_runclock+0x7c>)
  800036e:	681b      	ldr	r3, [r3, #0]
  8000370:	4618      	mov	r0, r3
  8000372:	f7ff ff77 	bl	8000264 <setNumberOnClock>
-
-    // Tăng giây sau mỗi lần gọi
-    giay++;
+    if(phut == 12){
+        phut = 0;
+        gio++;
  8000376:	4b13      	ldr	r3, [pc, #76]	; (80003c4 <led_runclock+0x74>)
  8000378:	681b      	ldr	r3, [r3, #0]
  800037a:	3301      	adds	r3, #1
  800037c:	4a11      	ldr	r2, [pc, #68]	; (80003c4 <led_runclock+0x74>)
  800037e:	6013      	str	r3, [r2, #0]
+    }
 
-    // Nếu giây đạt 12, reset giây và tăng phút
-    if(giay == 12){
+    if(gio == 12){
  8000380:	4b10      	ldr	r3, [pc, #64]	; (80003c4 <led_runclock+0x74>)
  8000382:	681b      	ldr	r3, [r3, #0]
  8000384:	2b0c      	cmp	r3, #12
  8000386:	d107      	bne.n	8000398 <led_runclock+0x48>
-        giay = 0;
+        gio = 0;
  8000388:	4b0e      	ldr	r3, [pc, #56]	; (80003c4 <led_runclock+0x74>)
  800038a:	2200      	movs	r2, #0
  800038c:	601a      	str	r2, [r3, #0]
-        phut++;  // Tăng phút sau khi giây đạt 12
+    }
  800038e:	4b0e      	ldr	r3, [pc, #56]	; (80003c8 <led_runclock+0x78>)
  8000390:	681b      	ldr	r3, [r3, #0]
  8000392:	3301      	adds	r3, #1
  8000394:	4a0c      	ldr	r2, [pc, #48]	; (80003c8 <led_runclock+0x78>)
  8000396:	6013      	str	r3, [r2, #0]
-    }
+}
 
-    // Nếu phút đạt 12, reset phút và tăng giờ
-    if(phut == 12){
  8000398:	4b0b      	ldr	r3, [pc, #44]	; (80003c8 <led_runclock+0x78>)
  800039a:	681b      	ldr	r3, [r3, #0]
  800039c:	2b0c      	cmp	r3, #12
  800039e:	d107      	bne.n	80003b0 <led_runclock+0x60>
-        phut = 0;
  80003a0:	4b09      	ldr	r3, [pc, #36]	; (80003c8 <led_runclock+0x78>)
  80003a2:	2200      	movs	r2, #0
  80003a4:	601a      	str	r2, [r3, #0]
-        gio++;  // Tăng giờ sau khi phút đạt 12
  80003a6:	4b09      	ldr	r3, [pc, #36]	; (80003cc <led_runclock+0x7c>)
  80003a8:	681b      	ldr	r3, [r3, #0]
  80003aa:	3301      	adds	r3, #1
  80003ac:	4a07      	ldr	r2, [pc, #28]	; (80003cc <led_runclock+0x7c>)
  80003ae:	6013      	str	r3, [r2, #0]
-    }
-
-    // Nếu giờ đạt 12, reset giờ về 0
-    if(gio == 12){
  80003b0:	4b06      	ldr	r3, [pc, #24]	; (80003cc <led_runclock+0x7c>)
  80003b2:	681b      	ldr	r3, [r3, #0]
  80003b4:	2b0c      	cmp	r3, #12
  80003b6:	d102      	bne.n	80003be <led_runclock+0x6e>
-        gio = 0;
  80003b8:	4b04      	ldr	r3, [pc, #16]	; (80003cc <led_runclock+0x7c>)
  80003ba:	2200      	movs	r2, #0
  80003bc:	601a      	str	r2, [r3, #0]
-    }
-}
  80003be:	bf00      	nop
  80003c0:	bd80      	pop	{r7, pc}
  80003c2:	bf00      	nop
