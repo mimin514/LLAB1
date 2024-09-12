@@ -1,3 +1,6 @@
-../Core/Src/led7.c:9:6:display	16	static
+../Core/Src/led7.c:9:6:display1	16	static
 ../Core/Src/led7.c:106:6:display2	16	static
-../Core/Src/led7.c:205:6:display1to9	8	static
+../Core/Src/led7.c:204:6:display1to9	8	static
+../Core/Src/led7.c:208:6:display_2_1to9	8	static
+../Core/Src/led7.c:215:6:display1_run	8	static
+../Core/Src/led7.c:228:6:display2_run	8	static
