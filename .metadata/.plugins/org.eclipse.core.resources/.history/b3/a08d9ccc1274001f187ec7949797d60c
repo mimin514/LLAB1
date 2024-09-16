@@ -258,7 +258,6 @@ void led_green_off_ng(void){
 
 int gio=0,phut=0,giay=0;
 void led_runclock(void){
-	clearAllClock();
     setNumberOnClock(giay);
     setNumberOnClock(phut);
     setNumberOnClock(gio);

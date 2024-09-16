@@ -2436,17 +2436,17 @@ LOAD d:/bkra/keil c test/stm32cubeide_1.10.1/stm32cubeide/plugins/com.st.stm32cu
  .debug_macro   0x00000000000153e2      0x1ed ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
  .debug_macro   0x00000000000155cf      0x194 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
 
-.debug_line     0x0000000000000000     0x4f88
- .debug_line    0x0000000000000000      0x8e7 ./Core/Src/led.o
- .debug_line    0x00000000000008e7      0x710 ./Core/Src/main.o
- .debug_line    0x0000000000000ff7      0x661 ./Core/Src/stm32f1xx_hal_msp.o
- .debug_line    0x0000000000001658      0x723 ./Core/Src/stm32f1xx_it.o
- .debug_line    0x0000000000001d7b      0x6df ./Core/Src/system_stm32f1xx.o
- .debug_line    0x000000000000245a       0x86 ./Core/Startup/startup_stm32f103c6tx.o
- .debug_line    0x00000000000024e0      0x90c ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
- .debug_line    0x0000000000002dec      0xaf4 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
- .debug_line    0x00000000000038e0      0x990 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
- .debug_line    0x0000000000004270      0xd18 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+.debug_line     0x0000000000000000     0x4f8a
+ .debug_line    0x0000000000000000      0x8e9 ./Core/Src/led.o
+ .debug_line    0x00000000000008e9      0x710 ./Core/Src/main.o
+ .debug_line    0x0000000000000ff9      0x661 ./Core/Src/stm32f1xx_hal_msp.o
+ .debug_line    0x000000000000165a      0x723 ./Core/Src/stm32f1xx_it.o
+ .debug_line    0x0000000000001d7d      0x6df ./Core/Src/system_stm32f1xx.o
+ .debug_line    0x000000000000245c       0x86 ./Core/Startup/startup_stm32f103c6tx.o
+ .debug_line    0x00000000000024e2      0x90c ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+ .debug_line    0x0000000000002dee      0xaf4 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
+ .debug_line    0x00000000000038e2      0x990 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
+ .debug_line    0x0000000000004272      0xd18 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
 
 .debug_str      0x0000000000000000    0x79ad1
  .debug_str     0x0000000000000000    0x788fe ./Core/Src/led.o
