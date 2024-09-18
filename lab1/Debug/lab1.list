@@ -37,13 +37,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  16 .debug_macro  00015763  00000000  00000000  00024320  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   00004d28  00000000  00000000  00039a83  2**0
+ 17 .debug_line   00004d2f  00000000  00000000  00039a83  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    000799ad  00000000  00000000  0003e7ab  2**0
+ 18 .debug_str    000799ad  00000000  00000000  0003e7b2  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000050  00000000  00000000  000b8158  2**0
+ 19 .comment      00000050  00000000  00000000  000b815f  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00000d58  00000000  00000000  000b81a8  2**2
+ 20 .debug_frame  00000d58  00000000  00000000  000b81b0  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -86,159 +86,158 @@ Disassembly of section .text:
  800014c:	b580      	push	{r7, lr}
  800014e:	af00      	add	r7, sp, #0
 	      if (count <= 5) {
- 8000150:	4b2e      	ldr	r3, [pc, #184]	; (800020c <led_run+0xc0>)
+ 8000150:	4b2c      	ldr	r3, [pc, #176]	; (8000204 <led_run+0xb8>)
  8000152:	681b      	ldr	r3, [r3, #0]
  8000154:	2b05      	cmp	r3, #5
  8000156:	dc14      	bgt.n	8000182 <led_run+0x36>
 	    	  HAL_GPIO_WritePin(LED_1_GPIO_Port, LED_1_Pin,1) ;
  8000158:	2201      	movs	r2, #1
  800015a:	2101      	movs	r1, #1
- 800015c:	482c      	ldr	r0, [pc, #176]	; (8000210 <led_run+0xc4>)
+ 800015c:	482a      	ldr	r0, [pc, #168]	; (8000208 <led_run+0xbc>)
  800015e:	f000 fc77 	bl	8000a50 <HAL_GPIO_WritePin>
 	    	  HAL_GPIO_WritePin(LED_6_GPIO_Port, LED_6_Pin,0) ;
  8000162:	2200      	movs	r2, #0
  8000164:	2120      	movs	r1, #32
- 8000166:	482a      	ldr	r0, [pc, #168]	; (8000210 <led_run+0xc4>)
+ 8000166:	4828      	ldr	r0, [pc, #160]	; (8000208 <led_run+0xbc>)
  8000168:	f000 fc72 	bl	8000a50 <HAL_GPIO_WritePin>
 
 	    	  HAL_GPIO_WritePin(LED_2_GPIO_Port, LED_2_Pin,1) ;
  800016c:	2201      	movs	r2, #1
  800016e:	2102      	movs	r1, #2
- 8000170:	4827      	ldr	r0, [pc, #156]	; (8000210 <led_run+0xc4>)
+ 8000170:	4825      	ldr	r0, [pc, #148]	; (8000208 <led_run+0xbc>)
  8000172:	f000 fc6d 	bl	8000a50 <HAL_GPIO_WritePin>
 	    	  HAL_GPIO_WritePin(LED_4_GPIO_Port, LED_4_Pin,0) ;
  8000176:	2200      	movs	r2, #0
  8000178:	2108      	movs	r1, #8
- 800017a:	4825      	ldr	r0, [pc, #148]	; (8000210 <led_run+0xc4>)
+ 800017a:	4823      	ldr	r0, [pc, #140]	; (8000208 <led_run+0xbc>)
  800017c:	f000 fc68 	bl	8000a50 <HAL_GPIO_WritePin>
  8000180:	e039      	b.n	80001f6 <led_run+0xaa>
 	      } else if (count <= 8) {
- 8000182:	4b22      	ldr	r3, [pc, #136]	; (800020c <led_run+0xc0>)
+ 8000182:	4b20      	ldr	r3, [pc, #128]	; (8000204 <led_run+0xb8>)
  8000184:	681b      	ldr	r3, [r3, #0]
  8000186:	2b08      	cmp	r3, #8
  8000188:	dc14      	bgt.n	80001b4 <led_run+0x68>
 	    	  HAL_GPIO_WritePin(LED_5_GPIO_Port, LED_5_Pin,1) ;
  800018a:	2201      	movs	r2, #1
  800018c:	2110      	movs	r1, #16
- 800018e:	4820      	ldr	r0, [pc, #128]	; (8000210 <led_run+0xc4>)
+ 800018e:	481e      	ldr	r0, [pc, #120]	; (8000208 <led_run+0xbc>)
  8000190:	f000 fc5e 	bl	8000a50 <HAL_GPIO_WritePin>
 	    	  HAL_GPIO_WritePin(LED_1_GPIO_Port, LED_1_Pin,0) ;
  8000194:	2200      	movs	r2, #0
  8000196:	2101      	movs	r1, #1
- 8000198:	481d      	ldr	r0, [pc, #116]	; (8000210 <led_run+0xc4>)
+ 8000198:	481b      	ldr	r0, [pc, #108]	; (8000208 <led_run+0xbc>)
  800019a:	f000 fc59 	bl	8000a50 <HAL_GPIO_WritePin>
 
 	    	  HAL_GPIO_WritePin(LED_3_GPIO_Port, LED_3_Pin,1) ;
  800019e:	2201      	movs	r2, #1
  80001a0:	2104      	movs	r1, #4
- 80001a2:	481b      	ldr	r0, [pc, #108]	; (8000210 <led_run+0xc4>)
+ 80001a2:	4819      	ldr	r0, [pc, #100]	; (8000208 <led_run+0xbc>)
  80001a4:	f000 fc54 	bl	8000a50 <HAL_GPIO_WritePin>
 	    	  HAL_GPIO_WritePin(LED_2_GPIO_Port, LED_2_Pin,0) ;
  80001a8:	2200      	movs	r2, #0
  80001aa:	2102      	movs	r1, #2
- 80001ac:	4818      	ldr	r0, [pc, #96]	; (8000210 <led_run+0xc4>)
+ 80001ac:	4816      	ldr	r0, [pc, #88]	; (8000208 <led_run+0xbc>)
  80001ae:	f000 fc4f 	bl	8000a50 <HAL_GPIO_WritePin>
  80001b2:	e020      	b.n	80001f6 <led_run+0xaa>
 	      } else if (count <= 10) {
- 80001b4:	4b15      	ldr	r3, [pc, #84]	; (800020c <led_run+0xc0>)
+ 80001b4:	4b13      	ldr	r3, [pc, #76]	; (8000204 <led_run+0xb8>)
  80001b6:	681b      	ldr	r3, [r3, #0]
  80001b8:	2b0a      	cmp	r3, #10
  80001ba:	dc0a      	bgt.n	80001d2 <led_run+0x86>
 	    	  HAL_GPIO_WritePin(LED_4_GPIO_Port, LED_4_Pin,1) ;
  80001bc:	2201      	movs	r2, #1
  80001be:	2108      	movs	r1, #8
- 80001c0:	4813      	ldr	r0, [pc, #76]	; (8000210 <led_run+0xc4>)
+ 80001c0:	4811      	ldr	r0, [pc, #68]	; (8000208 <led_run+0xbc>)
  80001c2:	f000 fc45 	bl	8000a50 <HAL_GPIO_WritePin>
 	    	  HAL_GPIO_WritePin(LED_3_GPIO_Port, LED_3_Pin,0) ;
  80001c6:	2200      	movs	r2, #0
  80001c8:	2104      	movs	r1, #4
- 80001ca:	4811      	ldr	r0, [pc, #68]	; (8000210 <led_run+0xc4>)
+ 80001ca:	480f      	ldr	r0, [pc, #60]	; (8000208 <led_run+0xbc>)
  80001cc:	f000 fc40 	bl	8000a50 <HAL_GPIO_WritePin>
  80001d0:	e011      	b.n	80001f6 <led_run+0xaa>
 	      } else if (count <= 13){
- 80001d2:	4b0e      	ldr	r3, [pc, #56]	; (800020c <led_run+0xc0>)
+ 80001d2:	4b0c      	ldr	r3, [pc, #48]	; (8000204 <led_run+0xb8>)
  80001d4:	681b      	ldr	r3, [r3, #0]
  80001d6:	2b0d      	cmp	r3, #13
  80001d8:	dc0a      	bgt.n	80001f0 <led_run+0xa4>
 	    	  HAL_GPIO_WritePin(LED_6_GPIO_Port, LED_6_Pin,1) ;
  80001da:	2201      	movs	r2, #1
  80001dc:	2120      	movs	r1, #32
- 80001de:	480c      	ldr	r0, [pc, #48]	; (8000210 <led_run+0xc4>)
+ 80001de:	480a      	ldr	r0, [pc, #40]	; (8000208 <led_run+0xbc>)
  80001e0:	f000 fc36 	bl	8000a50 <HAL_GPIO_WritePin>
 	    	  HAL_GPIO_WritePin(LED_5_GPIO_Port, LED_5_Pin,0) ;
  80001e4:	2200      	movs	r2, #0
  80001e6:	2110      	movs	r1, #16
- 80001e8:	4809      	ldr	r0, [pc, #36]	; (8000210 <led_run+0xc4>)
+ 80001e8:	4807      	ldr	r0, [pc, #28]	; (8000208 <led_run+0xbc>)
  80001ea:	f000 fc31 	bl	8000a50 <HAL_GPIO_WritePin>
  80001ee:	e002      	b.n	80001f6 <led_run+0xaa>
 
 	      }else count = 0;
- 80001f0:	4b06      	ldr	r3, [pc, #24]	; (800020c <led_run+0xc0>)
+ 80001f0:	4b04      	ldr	r3, [pc, #16]	; (8000204 <led_run+0xb8>)
  80001f2:	2200      	movs	r2, #0
  80001f4:	601a      	str	r2, [r3, #0]
 
 	      count++;
- 80001f6:	4b05      	ldr	r3, [pc, #20]	; (800020c <led_run+0xc0>)
+ 80001f6:	4b03      	ldr	r3, [pc, #12]	; (8000204 <led_run+0xb8>)
  80001f8:	681b      	ldr	r3, [r3, #0]
  80001fa:	3301      	adds	r3, #1
- 80001fc:	4a03      	ldr	r2, [pc, #12]	; (800020c <led_run+0xc0>)
+ 80001fc:	4a01      	ldr	r2, [pc, #4]	; (8000204 <led_run+0xb8>)
  80001fe:	6013      	str	r3, [r2, #0]
-	      HAL_Delay(700);
- 8000200:	f44f 702f 	mov.w	r0, #700	; 0x2bc
- 8000204:	f000 f9a0 	bl	8000548 <HAL_Delay>
-
-	  //}
 }
- 8000208:	bf00      	nop
- 800020a:	bd80      	pop	{r7, pc}
- 800020c:	20000028 	.word	0x20000028
- 8000210:	40010c00 	.word	0x40010c00
+ 8000200:	bf00      	nop
+ 8000202:	bd80      	pop	{r7, pc}
+ 8000204:	20000028 	.word	0x20000028
+ 8000208:	40010c00 	.word	0x40010c00
 
-08000214 <main>:
+0800020c <main>:
 /**
   * @brief  The application entry point.
   * @retval int
   */
 int main(void)
 {
- 8000214:	b580      	push	{r7, lr}
- 8000216:	af00      	add	r7, sp, #0
+ 800020c:	b580      	push	{r7, lr}
+ 800020e:	af00      	add	r7, sp, #0
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
- 8000218:	f000 f934 	bl	8000484 <HAL_Init>
+ 8000210:	f000 f938 	bl	8000484 <HAL_Init>
   /* USER CODE BEGIN Init */
 
   /* USER CODE END Init */
 
   /* Configure the system clock */
   SystemClock_Config();
- 800021c:	f000 f80a 	bl	8000234 <SystemClock_Config>
+ 8000214:	f000 f80e 	bl	8000234 <SystemClock_Config>
   /* USER CODE BEGIN SysInit */
 
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
- 8000220:	f000 f844 	bl	80002ac <MX_GPIO_Init>
+ 8000218:	f000 f848 	bl	80002ac <MX_GPIO_Init>
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   GPIOB->ODR=0x0000;
- 8000224:	4b02      	ldr	r3, [pc, #8]	; (8000230 <main+0x1c>)
- 8000226:	2200      	movs	r2, #0
- 8000228:	60da      	str	r2, [r3, #12]
+ 800021c:	4b04      	ldr	r3, [pc, #16]	; (8000230 <main+0x24>)
+ 800021e:	2200      	movs	r2, #0
+ 8000220:	60da      	str	r2, [r3, #12]
   while (1)
   {
     /* USER CODE END WHILE */
 	  led_run();
- 800022a:	f7ff ff8f 	bl	800014c <led_run>
- 800022e:	e7fc      	b.n	800022a <main+0x16>
+ 8000222:	f7ff ff93 	bl	800014c <led_run>
+	  HAL_Delay(1000);
+ 8000226:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
+ 800022a:	f000 f98d 	bl	8000548 <HAL_Delay>
+	  led_run();
+ 800022e:	e7f8      	b.n	8000222 <main+0x16>
  8000230:	40010c00 	.word	0x40010c00
 
 08000234 <SystemClock_Config>:
@@ -793,7 +792,7 @@ LoopFillZerobss:
  8000462:	f000 feeb 	bl	800123c <__libc_init_array>
 /* Call the application's entry point.*/
   bl main
- 8000466:	f7ff fed5 	bl	8000214 <main>
+ 8000466:	f7ff fed1 	bl	800020c <main>
   bx lr
  800046a:	4770      	bx	lr
   ldr r0, =_sdata

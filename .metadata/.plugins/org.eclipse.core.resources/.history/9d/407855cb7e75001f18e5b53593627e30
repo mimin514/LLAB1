@@ -90,12 +90,11 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  GPIOB->ODR=0x0000;
+  //GPIOB->ODR=0x0000;
   while (1)
   {
     /* USER CODE END WHILE */
 	  led_run();
-	  HAL_Delay(1000);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
