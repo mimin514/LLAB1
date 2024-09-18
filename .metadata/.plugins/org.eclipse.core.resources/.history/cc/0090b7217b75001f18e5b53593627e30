@@ -9,6 +9,6 @@
 #define INC_LED7_H_
 #include "main.h"
 
-void display7SEG(int num);
+void display(int num);
 void display1to9(void);
 #endif /* INC_LED7_H_ */

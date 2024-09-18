@@ -6,7 +6,7 @@
  */
 #include "led7.h"
 
-void display7SEG(int num){
+void display(int num){
 	switch (num){
 	case 0:
 		HAL_GPIO_WritePin(SEG_0_GPIO_Port, SEG_0_Pin, 0);
@@ -105,6 +105,6 @@ void display7SEG(int num){
 	int count=0;
 
 void display1to9(void){
-	display7SEG(count++);
+display(count++);
 	if(count>9) count=0;
 }
