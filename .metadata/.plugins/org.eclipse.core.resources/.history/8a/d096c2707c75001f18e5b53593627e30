@@ -91,8 +91,6 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  GPIOA->ODR=0x0000;
-  GPIOB->ODR=0x0000;
   while (1)
   {
 	  led_run();

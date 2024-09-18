@@ -31,6 +31,7 @@
 	      }else count = 0;
 
 	      count++;
+	      HAL_Delay(700);
 
 	  //}
 }
