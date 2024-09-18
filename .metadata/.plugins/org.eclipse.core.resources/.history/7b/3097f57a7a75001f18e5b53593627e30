@@ -9,6 +9,7 @@
 #define INC_LED_H_
 #include "main.h"
 
+void led_init(void);
 void led_run(void);
 
 

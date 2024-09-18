@@ -90,7 +90,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  GPIOB->ODR=0x0000;
+  GPIOB->ODR=0xFFFF;
   while (1)
   {
     /* USER CODE END WHILE */
