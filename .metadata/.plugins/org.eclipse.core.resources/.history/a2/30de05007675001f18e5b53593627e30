@@ -91,8 +91,6 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   int count=0;
-  HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, 0);
-  HAL_GPIO_WritePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin, 1);
   while (1)
   {
 	  if(count==2){
