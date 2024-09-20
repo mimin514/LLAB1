@@ -1980,11 +1980,12 @@ LOAD d:/bkra/keil c test/stm32cubeide_1.10.1/stm32cubeide/plugins/com.st.stm32cu
  .text.led_runclock
                 0x0000000008000350       0x9c ./Core/Src/led.o
                 0x0000000008000350                led_runclock
- .text.main     0x00000000080003ec       0x22 ./Core/Src/main.o
+ .text.main     0x00000000080003ec       0x20 ./Core/Src/main.o
                 0x00000000080003ec                main
  .text.SystemClock_Config
-                0x000000000800040e       0x76 ./Core/Src/main.o
-                0x000000000800040e                SystemClock_Config
+                0x000000000800040c       0x76 ./Core/Src/main.o
+                0x000000000800040c                SystemClock_Config
+ *fill*         0x0000000008000482        0x2 
  .text.MX_GPIO_Init
                 0x0000000008000484       0xc0 ./Core/Src/main.o
  .text.Error_Handler
