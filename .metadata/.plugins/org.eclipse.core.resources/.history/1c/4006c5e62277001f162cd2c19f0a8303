@@ -98,7 +98,7 @@ int main(void)
 	  led_run();
 	  display1_run();
 	  display2_run();
-	  HAL_Delay(20000);
+	  HAL_Delay(2000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
