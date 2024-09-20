@@ -183,7 +183,6 @@ void led_init(void)
   }
 
 int gio=0,phut=0,giay=0;
-int cnt=0;
 void led_runclock(void){
 	clearAllClock();
     setNumberOnClock(giay);
@@ -192,10 +191,9 @@ void led_runclock(void){
 
     giay++;
 
-    if(giay == 12){
+    if(giay == 12*5){
         giay = 0;
-       cnt++;
-        if(cnt>=5){cnt=0; phut++;}
+        phut++;
     }
 
     if(phut == 12){

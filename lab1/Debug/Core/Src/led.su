@@ -3,4 +3,4 @@
 ../Core/Src/led.c:85:8:clearAllClock	8	static
 ../Core/Src/led.c:99:8:setNumberOnClock	16	static
 ../Core/Src/led.c:142:7:clearNumberOnClock	16	static
-../Core/Src/led.c:186:6:led_runclock	8	static
+../Core/Src/led.c:187:6:led_runclock	8	static
